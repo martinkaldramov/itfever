@@ -1,0 +1,28 @@
+{
+  "name": "itfever",
+  "version": "1.0.0",
+  "description": "\"# itfever\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinkaldramov/itfever.git"
+  },
+  "author": "Martin Kaldramov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinkaldramov/itfever/issues"
+  },
+  "homepage": "https://github.com/martinkaldramov/itfever#readme",
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-security": "^1.4.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
