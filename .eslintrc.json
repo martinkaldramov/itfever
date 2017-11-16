@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "node",
+    "security",
+    "mocha"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:node/recommended",
+    "plugin:security/recommended"
+  ],
+  "rules": {
+    "node/exports-style": ["error", "module.exports"],
+    "mocha/no-exclusive-tests": "error"
+  }
+}
