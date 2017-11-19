@@ -7,7 +7,7 @@ var {ObjectID} = require('mongodb');
 
 var app = express();
 
-app.use('/static', express.static(path.join(__dirname + '/../static')));
+// app.use('/static', express.static(path.join(__dirname + '/../static')));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
