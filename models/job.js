@@ -1,9 +1,9 @@
-const mongoose = require('mongoose'),
+const mongoose = require('mongoose'), // eslint-disable-line
       Schema = mongoose.Schema;
 
 var JobSchema = Schema({
   owner: {type: Schema.Types.ObjectId, ref: 'Company', required: true},
-  active: {type: Boolean, required: true},
+  status: {type: String, required: true},
   title: {type: String, required: true},
   location: {type: String, required: true},
   categories: {type: [String], required: true},
@@ -22,7 +22,7 @@ var JobSchema = Schema({
 JobSchema
 .virtual('url')
 .get(() => {
-  return `/api/job/${this._id}`;  
+  return `/api/job/${this._id}`;
 });
 
 module.exports = mongoose.model('Job', JobSchema);

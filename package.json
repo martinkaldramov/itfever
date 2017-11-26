@@ -1,6 +1,9 @@
 {
   "name": "itfever",
   "version": "1.0.0",
+  "engines": {
+        "node": ">=8.0.0"
+    },
   "description": "\"# itfever\"",
   "main": "index.js",
   "scripts": {

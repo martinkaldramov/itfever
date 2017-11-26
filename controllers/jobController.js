@@ -2,7 +2,7 @@ const Job = require('../models/job'),
       Company = require('../models/companyAcc.js');
 
 // Create a job from POST request
-exports.create_job = (req, res, next) => {
+module.exports.create_job = (req, res, next) => { // eslint-disable-line
   var job = new Job({
     owner: Company.find({name: req.body.name})._id,
     active: req.body.active,
@@ -20,5 +20,5 @@ exports.create_job = (req, res, next) => {
     experience: (typeof req.body.experience === 'undefined' ? null : req.body.experience)
   });
 
-  console.log(`Job: ${job}`);
+  console.log(`Job: ${job}`); // eslint-disable-line
 }
