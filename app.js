@@ -1,7 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var path = require('path');
-var {ObjectID} = require('mongodb');
+var path = require('path'); // eslint-disable-line
+var {ObjectID} = require('mongodb'); // eslint-disable-line
 
 // var {mongoose} = require('./db/mongoose');
 
@@ -11,7 +11,7 @@ var app = express();
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.send('Working');  
+  res.send('Working');
 });
 
 module.exports = app;

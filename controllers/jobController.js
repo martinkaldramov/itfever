@@ -5,7 +5,7 @@ const Job = require('../models/job'),
 module.exports.create_job = (req, res, next) => { // eslint-disable-line
   var job = new Job({
     owner: Company.find({name: req.body.name})._id,
-    active: req.body.active,
+    status: req.body.status,
     title: req.body.title,
     location: req.body.location,
     categories: req.body.categories,
