@@ -10,7 +10,7 @@ module.exports.create_company_acc = (req, res, next) => { // eslint-disable-line
     name: req.body.name,
     address: req.body.address,
     phone: req.body.phone,
-    webUrl: req.body.webUrl,
+    webUrl: req.body.webUrl
   });
 
   company.save().then((companyAcc) => {
