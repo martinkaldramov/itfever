@@ -1,13 +1,13 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var path = require('path'); // eslint-disable-line
-var {ObjectID} = require('mongodb'); // eslint-disable-line
+const express = require('express');
+const bodyParser = require('body-parser');
+const path = require('path'); // eslint-disable-line
+const {ObjectID} = require('mongodb'); // eslint-disable-line
 
-// var {mongoose} = require('./db/mongoose');
+// const {mongoose} = require('./db/mongoose');
 
-var app = express();
+const app = express();
 
-// app.use('/static', express.static(path.join(__dirname + '/../static')));
+app.use('/static', express.static(path.join(__dirname + '/static')));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {

@@ -19,7 +19,7 @@ var server = http.createServer(app);
  */
 
 server.listen(port, () => {
-  console.log(`Listening on port ${port}`);  
+  console.log(`Listening on port ${port}`);  // eslint-disable-line
 });
 server.on('error', onError);
 server.on('listening', onListening);

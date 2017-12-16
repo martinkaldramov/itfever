@@ -2,8 +2,8 @@
   "name": "itfever",
   "version": "1.0.0",
   "engines": {
-        "node": ">=8.0.0"
-    },
+    "node": ">=8.0.0"
+  },
   "description": "\"# itfever\"",
   "main": "index.js",
   "scripts": {
@@ -28,7 +28,9 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-standard": "^3.0.1",
-    "mongoose": "^4.13.4"
+    "faucet": "0.0.1",
+    "mongoose": "^4.13.4",
+    "tape": "^4.8.0"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
